@@ -96,10 +96,22 @@ export default {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: all 300ms;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, blue, blue);
 }
 
 .highlight .btn {
   background: white;
   color: gray;
+  border: 2px solid transparent;
+}
+
+.highlight .btn:hover {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
 }
 </style>
