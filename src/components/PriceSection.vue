@@ -93,7 +93,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 100% 0 0;
+  width: 100%;
   max-width: 70vw;
 }
 

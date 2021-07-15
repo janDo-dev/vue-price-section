@@ -28,7 +28,7 @@ export default {
 <style scoped>
 .price-box {
   flex-basis: calc(100% / 3);
-  padding: 3rem;
+  padding: 3rem 2rem;
   background-color: white;
   border-radius: 10px;
   font-weight: bold;
@@ -48,9 +48,10 @@ export default {
 }
 
 .price-box.highlight {
-  background: linear-gradient(180deg, lightblue, blue);
+  background-image: linear-gradient(180deg, lightblue, blue);
   color: white;
-  padding: 5rem 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   z-index: 10;
 }
@@ -90,28 +91,30 @@ export default {
 
 .btn {
   display: block;
-  background: linear-gradient(135deg, lightblue, blue);
+  position: relative;
   padding: 1rem;
+  border: 2px solid blue;
   border-radius: 5px;
-  color: white;
+  color: gray;
   text-decoration: none;
   font-weight: bold;
-  transition: all 300ms;
+  transition: all 300ms ease-in-out;
 }
 
 .btn:hover {
-  background: linear-gradient(135deg, blue, blue);
+  background-color: blue;
+  color: white;
 }
 
 .highlight .btn {
-  background: white;
+  background-image: none;
+  background-color: white;
   color: gray;
-  border: 2px solid transparent;
+  border: 2px solid white;
 }
 
 .highlight .btn:hover {
-  background: transparent;
+  background-color: transparent;
   color: white;
-  border: 2px solid white;
 }
 </style>
